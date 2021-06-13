@@ -7,5 +7,7 @@ class BasicSort(ABC):
     def sort(array, with_trace=False):
         pass
 
-    def trace(self):
-        pass
+    @staticmethod
+    def trace(array, changed_array):
+        print('{} -> {}'.format(array, changed_array))
+

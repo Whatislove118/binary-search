@@ -8,9 +8,7 @@ class BasicSearch(ABC):
         pass
 
     @staticmethod
-    def trace(arr):
-        top_string = '------------------------ TRACE ------------------------'
-        print(top_string)
-        for i, element in enumerate(arr):
-            pass
+    def trace(arr, changed_arr):
+        print('{} -> {}'.format(arr, changed_arr))
+
 

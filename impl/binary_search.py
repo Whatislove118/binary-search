@@ -11,12 +11,15 @@ class BinarySearch(BasicSearch):
         left_bound, right_bound = 0, len(arr)
         for i in arr:
             mid = math.floor((right_bound + left_bound) / 2)  # round down
+            old_array = arr[left_bound:right_bound]
             if sought_for_element == arr[mid]:
                 return mid
             elif sought_for_element < arr[mid]:
                 right_bound = mid
             elif sought_for_element > arr[mid]:
                 left_bound = mid
+            if with_trace:
+                BasicSearch.trace(old_array, arr[left_bound:right_bound])
         raise ElementNotFoundException()
 
             
