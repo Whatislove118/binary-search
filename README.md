@@ -1,6 +1,6 @@
-# :clipboard: :mag: Binary-search
+# Binary-search
 ## Project №1 for CV
-**This code realizes the `Binary Search` algorithm in `Python`.**
+**:clipboard: :mag: This code realizes the `Binary Search` algorithm in `Python`.**
 ### Description
 This code provides a `binary search` algorithm. `Bubble sort` is used to sort the array. It also provides the ability to output a trace.
 ### Code architecture
